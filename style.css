@@ -53,6 +53,8 @@ nav a{
     font-family: "Jersey 25", sans-serif;
   font-weight: 700;
   font-style: normal;
+  -webkit-animation: shake-vertical 30s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+	        animation: shake-vertical 30s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
 
 nav a:hover{
@@ -117,6 +119,8 @@ h1, h2, h3{
 
 .ppl img{
     width: 450px;
+    -webkit-animation: shake-vertical 30s cubic-bezier(0.455, 0.030, 0.515, 0.955) 1s infinite both;
+	        animation: shake-vertical 30s cubic-bezier(0.455, 0.030, 0.515, 0.955) 1s infinite both;
 }
 
 .ppl img:hover{
@@ -220,6 +224,64 @@ button:hover{
       opacity: 1;
     }
   }
+
+  @-webkit-keyframes shake-vertical {
+    0%,
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateY(8px);
+              transform: translateY(8px);
+    }
+    80% {
+      -webkit-transform: translateY(6.4px);
+              transform: translateY(6.4px);
+    }
+    90% {
+      -webkit-transform: translateY(-6.4px);
+              transform: translateY(-6.4px);
+    }
+  }
+  @keyframes shake-vertical {
+    0%,
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateY(8px);
+              transform: translateY(8px);
+    }
+    80% {
+      -webkit-transform: translateY(6.4px);
+              transform: translateY(6.4px);
+    }
+    90% {
+      -webkit-transform: translateY(-6.4px);
+              transform: translateY(-6.4px);
+    }
+  }
+  
 
 .manualVerde p{
     font-family: "Josefin Sans", sans-serif;
