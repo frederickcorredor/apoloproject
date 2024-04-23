@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+25&display=swap" rel="stylesheet">
+    <title>Ciencia Pa' Todos</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <a href="#">Noticias</a>
+            <a href="#">Manual Verde</a>
+            <a href="#">Un minuto por mi Salud</a>
+            <a href="#">Infografias</a>
+            <a href="#">Podcast</a>
+            <a href="#">Juegos</a>
+        </nav>
+    </div>
+    
+    <section class="ppl" id="ppl">
+        <div class="dialogo" id="texto1">
+            <h1>¡Bienvenido a bordo, explorador!</h1>
+            <p>
+                Soy Apolo, tu guia en este fascinante viaje por el amplio
+                universo del conocimiento científico.
+            </p>
+            <div class="formulario">
+                <label for="nombre">Dime cómo te llamas</label><br>
+                <input type="text" id="nombre">
+                <button onclick="saludar()">Continuar</button>
+            </div>
+        </div>
+        <div class="dialogo2" id="texto2">
+            <p id="parrafo2">
+
+            </p>
+
+            <h3>¿Quieres darle un vistaso a nuestro Manual Verde?</h3>
+            <button onclick="verManual()">Ver Manual Verde</button>
+            
+            <p>
+                Tambien puedes explorar nuestras secciones en el menu ubicado en la parte superior.
+            </p>
+        </div>
+        <img src="Apolo (1).png" alt="">
+    </section>
+
+    <section class="manualVerde" id="manualVerde">
+        <div class="historia1" id="historia1">
+            <div class="ladoA">
+
+                <h2>Las hormigas no duermen
+                    </h2>
+
+                <p>
+                    Las hormigas, esos insectos tan
+                    intrigantes, están constantemente
+                    activas. Participan en conflictos,
+                    tienen la habilidad de esclavizar a
+                    otros, y su vida en comunidad
+                    está organizada de manera
+                    admirable para obtener alimento
+                    y construir sus nidos. Parecen
+                    incesantes en sus acciones, y tal
+                    vez esto se deba a su incapacidad
+                    para descansar, ni siquiera por un
+                    breve momento.
+                </p>
+            </div>
+            <div class="ladoB">
+
+                <h2>Los caballos de mar machos, tienen a las crías
+                    </h2>
+
+                <p>
+                    Los caballitos de mar, poseen una característica
+                    única: son los machos los encargados de dar a
+                    luz a las crías. Tras la hembra depositar los
+                    huevos en una bolsa dentro del macho, este
+                    desarrolla una suerte de placenta y se encarga
+                    de alimentar a su descendencia.
+                </p>
+                <button style="position: absolute; bottom: 2px; right: 6px;" onclick="nextPage('historia1', 'historia2')">Siguiente</button>
+            </div>
+        </div>
+
+        <div class="historia1" id="historia2">
+            <div class="ladoA">
+
+                <h2>¿Sabías que existen animales que respiran por la piel?</h2>
+
+                <p>
+                    Algunos animales, como las salamandras
+                    apulmonadas o tlaconetes, pueden respirar
+                    exclusivamente a través de la piel, realizando
+                    el intercambio gaseoso sin necesidad de
+                    pulmones o branquias. <br><br>
+
+
+                </p>
+                <button style="position: absolute; bottom: 2px; left: 6px;" onclick="antPage('historia1', 'historia2')">Anterior</button>
+            </div>
+            <div class="ladoB">
+                <p>
+                    Este método de respiración, llamado cutáneo,
+                    es común en ciertos anfibios, como las
+                    salamandras pletodóntidas, que viven en
+                    hábitats frescos y oxigenados. También se
+                    encuentra en reptiles acuáticos como algunas
+                    serpientes y tortugas, así como en reptiles
+                    terrestres como la boa constrictora. Incluso
+                    ciertos invertebrados, como las lombrices de
+                    tierra y las sanguijuelas, respiran a través de
+                    la piel. Los cnidarios, como medusas y
+                    anémonas, también pueden respirar de esta
+                    manera en ambientes húmedos y con
+                    necesidades energéticas bajas.
+                </p>
+                <button style="position: absolute; bottom: 2px; right: 6px;" onclick="nextPage('historia2', 'historia3')">Siguiente</button>
+            </div>
+        </div>
+
+        <div class="historia1" id="historia3">
+            <div class="ladoA">
+
+                <h2>El Colibrí: Portador de mensajes de amor, energía y superación</h2>
+
+                <p>
+                   
+
+
+                </p>
+                <button style="position: absolute; bottom: 2px; left: 6px;" onclick="antPage('historia2', 'historia3')">Anterior</button>
+            </div>
+            <div class="ladoB">
+                <p>
+                    Los colibríes, además de ser aves
+                    pequeñas y hermosas, tienen un
+                    profundo simbolismo en diferentes
+                    culturas nativas de América. Según la
+                    leyenda guaraní, ver un colibrí significa
+                    que un ser querido fallecido te está
+                    visitando.  
+                </p>
+                <button style="position: absolute; bottom: 2px; right: 6px;" onclick="nextPage('historia3', 'historia4')">Siguiente</button>
+            </div>
+        </div>
+
+        <div class="historia1" id="historia4">
+            <div class="ladoA">
+
+                <p>
+                    Se cree que el colibrí lleva el
+                    alma del difunto desde una flor, donde
+                    se purifica y conecta con la tierra,
+                    hacia el paraíso. Para los mayas, el
+                    colibrí es un mensajero de buenos
+                    deseos, indicando que alguien está
+                    pensando en ti. Los aztecas, por su
+                    parte, los consideraban mensajeros
+                    entre hombres y dioses, asociándolos
+                    con la energía para enfrentar
+                    adversidades.
+
+
+                </p>
+                <button style="position: absolute; bottom: 2px; left: 6px;" onclick="antPage('historia3', 'historia4')">Anterior</button>
+            </div>
+            <div class="ladoB">
+                <p>
+                    Debido a su territorialidad y defensa de sus hembras, los aztecas usaban amuletos con
+                    forma de colibrí para atraer energía, fuerza y habilidades para enfrentar desafíos. En la
+                    actualidad, ver un colibrí puede interpretarse como un mensaje de los dioses para seguir
+                    adelante y enfrentar los retos con energía y habilidad
+                </p>
+                <button style="position: absolute; bottom: 2px; right: 6px;" onclick="nextPage('historia4', 'historia5')">Siguiente</button>
+            </div>
+        </div>
+
+        <div class="historia1" id="historia5">
+            <div class="ladoA">
+                <h2>El sol irradia energía en
+                    abundancia ¿Aprovechamos
+                    su potencial?</h2>
+                <p>
+                    La realidad es que el sol emite más
+                    energía hacia la Tierra de la que
+                    podríamos consumir. Esta revelación
+                    subraya la importancia de adoptar la
+                    energía solar: limpia, renovable y capaz de
+                    reducir significativamente tu factura
+                    eléctrica
+
+
+                </p>
+                <button style="position: absolute; bottom: 2px; left: 6px;" onclick="antPage('historia4', 'historia5')">Anterior</button>
+            </div>
+            <div class="ladoB">
+                <p>
+                    
+                </p>
+                <button style="position: absolute; bottom: 2px; right: 6px;" onclick="nextPage('historia5', 'historia6')">Siguiente</button>
+            </div>
+        </div>
+
+        <div class="historia1" id="historia6">
+            <div class="ladoA">
+                <h2>El verdadero motor de oxígeno en
+                    la tierra: Los Océanos</h2>
+                <p>
+                    Comúnmente se piensa que los bosques son los principales generadores de
+                    oxígeno en nuestro planeta, la verdad es otra. Si bien los árboles desempeñan un
+                    papel crucial en la producción de este gas vital, son los océanos los verdaderos
+                    protagonistas en este aspecto.
+
+                </p>
+                <button style="position: absolute; bottom: 2px; left: 6px;" onclick="antPage('historia5', 'historia6')">Anterior</button>
+            </div>
+            <div class="ladoB">
+                <p>
+                    Los océanos albergan una gran cantidad de fitoplancton, diminutos organismos que
+                    flotan en la zona eufótica, donde la luz penetra. Estos incluyen algas unicelulares y
+                    cianobacterias fotosintéticas, que gracias a su proceso de fotosíntesis, generan
+                    entre el 50 y el 85 % del oxígeno liberado anualmente en la atmósfera. Así, los
+                    océanos se revelan como el verdadero y esencial pulmón de nuestro planeta,
+                    sosteniendo la vida terrestre a través de la producción de oxígeno.
+                </p>
+                <button style="position: absolute; bottom: 2px; right: 6px;" onclick="nextPage('historia6', 'historia7')">Siguiente</button>
+            </div>
+        </div>
+        
+        <div class="historia1" id="historia7">
+            <div class="ladoA">
+                <h2>¿Cuánto crees que tardaría en hundirse un
+                    objeto pesado en el océano? ¡Sorpréndete!</h2>
+                <p>
+                    Contrario a lo que se podría pensar, el proceso no es inmediato. De hecho, llevaría
+                    casi una hora para que un objeto pesado alcance las profundidades más remotas del
+                    océano.
+
+                </p>
+                <button style="position: absolute; bottom: 2px; left: 6px;" onclick="antPage('historia6', 'historia7')">Anterior</button>
+            </div>
+            <div class="ladoB">
+                <p>
+                    ¿La razón? No tiene tanto que ver con el peso del objeto, sino más bien con los
+                    sedimentos y las corrientes marinas. Estos elementos ejercen una influencia crucial
+                    en los movimientos dentro del océano, determinando la velocidad y dirección del
+                    hundimiento. Así, el viaje de un objeto hacia las profundidades oceánicas es mucho
+                    más lento y complejo de lo que podríamos imaginar a primera vista.
+
+                </p>
+                <button style="position: absolute; bottom: 2px; right: 6px;" onclick="nextPage('historia7', 'historia8')">Siguiente</button>
+            </div>
+        </div>
+
+        <div class="historia1" id="historia8">
+            <div class="ladoA">
+                <h2>¿Qué tanto sabes?</h2>
+                <p>
+                    Pruébate a responder las preguntas más difíciles de ciencia y
+                    conoce qué tan interesante eres. Se dice que las personas
+                    que responden bien a al menos 7 de las 10 preguntas, se
+                    consideran altamente inteligentes, si respondes menos de
+                    eso, no eres tan listo que digamos.
+
+                </p>
+                <button style="position: absolute; bottom: 2px; left: 6px;" onclick="antPage('historia7', 'historia8')">Anterior</button>
+            </div>
+            <div class="ladoB">
+                <p>
+                    Este es un reto intelectual para ti ytus amigos 
+                </p>
+                <img src="Apolo (1).png" alt="" width="80%">
+                <button style="position: absolute; bottom: 2px; right: 6px;" onclick="nextPage('historia8', 'historia9')">Siguiente</button>
+            </div>
+        </div>
+
+        <div class="historia1" id="historia9">
+            <div class="ladoA">
+                <h4>¿A que tiene pánico alguien que padece aracnofobia?</h4>
+                <form action="">
+                    <input type="radio" name="pregunta1" id="">
+                    <label for="pregunta1">Opción</label><br>
+
+                    <input type="radio" name="pregunta1" id="">
+                    <label for="pregunta1">Opción</label><br>
+
+                    <input type="radio" name="pregunta1" id="">
+                    <label for="pregunta1">Opción</label><br>
+
+                </form>
+
+                <h4>¿Dónde está el hueso humano más pequeño?</h4>
+                <form action="">
+                    <input type="radio" name="pregunta1" id="">
+                    <label for="pregunta1">Nariz</label><br>
+
+                    <input type="radio" name="pregunta1" id="">
+                    <label for="pregunta1">Oido</label><br>
+
+                    <input type="radio" name="pregunta1" id="">
+                    <label for="pregunta1">Lengua</label><br>
+
+                </form>
+
+                <h4>¿¿Cuántos días tarda la luna en pasar de nueva a llena?</h4>
+                <form action="">
+                    <input type="radio" name="pregunta1" id="">
+                    <label for="pregunta1">7</label><br>
+
+                    <input type="radio" name="pregunta1" id="">
+                    <label for="pregunta1">14</label><br>
+
+                    <input type="radio" name="pregunta1" id="">
+                    <label for="pregunta1">21</label><br>
+
+                </form>
+            </div>
+            <div class="ladoB">
+                <h4>¿Cómo se llama la capa externa de la Tierra?</h4>
+                <form action="">
+                    <input type="radio" name="pregunta1" id="">
+                    <label for="pregunta1">Opción</label><br>
+
+                    <input type="radio" name="pregunta1" id="">
+                    <label for="pregunta1">Opción</label><br>
+
+                    <input type="radio" name="pregunta1" id="">
+                    <label for="pregunta1">Opción</label><br>
+
+                </form>
+
+                <h4>¿Cuál es el pájaro más grande del mundo?</h4>
+                <form action="">
+                    <input type="radio" name="pregunta1" id="">
+                    <label for="pregunta1">Opción</label><br>
+
+                    <input type="radio" name="pregunta1" id="">
+                    <label for="pregunta1">Opción</label><br>
+
+                    <input type="radio" name="pregunta1" id="">
+                    <label for="pregunta1">Opción</label><br>
+
+                </form>
+
+                <h4>El diamante es una forma casi pura ¿de qué elemento?</h4>
+                <form action="">
+                    <input type="radio" name="pregunta1" id="">
+                    <label for="pregunta1">Opción</label><br>
+
+                    <input type="radio" name="pregunta1" id="">
+                    <label for="pregunta1">Opción</label><br>
+
+                    <input type="radio" name="pregunta1" id="">
+                    <label for="pregunta1">Opción</label><br>
+
+                </form>
+                <button style="position: absolute; bottom: 2px; right: 6px;" onclick="enviarR('historia9', 'historia10')">Enviar</button>
+            </div>
+        </div>
+
+        <div class="historia1" id="historia10">
+            <div class="ladoA">
+                <h2>¿Por qué los astronautas
+                    no pueden eructar?</h2>
+                <p>
+                    Este fenómeno se debe a la ausencia de
+                    gravedad, que interrumpe el proceso natural
+                    de separación entre líquidos y gases dentro
+                    del cuerpo humano.
+
+                </p>
+                
+            </div>
+            <div class="ladoB">
+                <p>
+                    Normalmente, para eructar, necesitamos
+                    expulsar gases acumulados en el estómago.
+                    Sin embargo, en condiciones de ingravidez, la
+                    falta de fuerza gravitatoria impide que los
+                    líquidos y gases se separen como lo hacen en
+                    la Tierra. Esta mezcla impide la liberación de
+                    gases necesaria para el eructo, dejando a los
+                    astronautas sin esa capacidad durante sus
+                    misiones espaciales.
+
+
+                </p>
+                <button style="position: absolute; bottom: 2px; right: 6px;" onclick="nextPage('historia10', 'historia11')">Siguiente</button>
+            </div>
+        </div>
+
+        <div class="historia1" id="historia11">
+            <div class="ladoA">
+                <h2>El tiempo en el espacio,
+                    es pasado</h2>
+                <p>
+                    En el cosmos, cada objeto y evento que
+                    observamos ya es historia. Según la teoría de la
+                    relatividad de Einstein, la luz, que es nuestra
+                    ventana al universo, viaja a una velocidad finita.
+                    Esto significa que todo lo que vemos en el
+                    espacio, ya sea hace minutos o millones de años,
+                    ha ocurrido en el pasado.
+
+                </p>
+                <button style="position: absolute; bottom: 2px; left: 6px;" onclick="antPage('historia10', 'historia11')">Anterior</button>
+            </div>
+            <div class="ladoB">
+                <p>
+                    La distancia juega un papel importante. Cuanto
+                    más lejos esté un objeto de nosotros, más
+                    tiempo tardará su luz en llegar. Por eso, usamos
+                    los "años luz" para medir estas distancias
+                    cósmicas. <br> <br>
+                    Por ejemplo, si un astrónomo ve la explosión de
+                    una estrella que se encuentra a 100 años luz de
+                    distancia, esto significa que el evento ocurrió
+                    hace exactamente 100 años, ya que la luz ha
+                    necesitado todo ese tiempo para alcanzar la
+                    Tierra.
+
+
+                </p>
+                <button style="position: absolute; bottom: 2px; right: 6px;" onclick="nextPage('historia11', 'historia12')">Siguiente</button>
+            </div>
+        </div>
+
+        <div class="historia1" id="historia12">
+            <div class="ladoA">
+                <h2>Curiosidades de
+                    las flores</h2>
+                <p>
+                    Las flores, esos símbolos de belleza y elegancia,
+                    no siempre estuvieron presentes en nuestro
+                    mundo. Según investigadores de la Universidad
+                    Paris-Sud, las primeras floraciones surgieron
+                    hace aproximadamente 140 millones de años.
+                    Estas primeras flores, ancestros comunes de
+                    todas las plantas con flores, marcaron un hito
+                    en la evolución botánica.
+
+                </p>
+                <button style="position: absolute; bottom: 2px; left: 6px;" onclick="antPage('historia11', 'historia12')">Anterior</button>
+            </div>
+            <div class="ladoB">
+                <p>
+                    La Wolffia angusta, una lenteja de agua tropical,
+                    destaca como la planta con flores más diminuta
+                    del planeta, algunas apenas superan los 0,5 mm
+                    de ancho al madurar y exhiben una gama de
+                    colores que incluyen amarillo, naranja, rosa y
+                    rojo.
+
+
+                </p>
+                <button style="position: absolute; bottom: 2px; right: 6px;" onclick="nextPage('historia12', 'historia13')">Siguiente</button>
+            </div>
+        </div>
+
+        <div class="historia1" id="historia13">
+            <div class="ladoA">
+                
+                <p>
+                    Los girasoles (Helianthus annuus) tienen la
+                    fascinante habilidad de seguir el movimiento del
+                    sol de este a oeste a lo largo del día, un
+                    fenómeno conocido como heliotropismo. Esta
+                    característica es más prominente en sus etapas
+                    juveniles. Observarlos moverse como las agujas
+                    de un reloj es un espectáculo repetido
+                    diariamente, ya que cada día realizan este
+                    "periplo" en anticipación a la salida del sol de la
+                    mañana siguiente.
+
+                </p>
+                <button style="position: absolute; bottom: 2px; left: 6px;" onclick="antPage('historia12', 'historia13')">Anterior</button>
+            </div>
+            <div class="ladoB">
+                <p>
+                    Las flores de la gloria de la mañana, que se
+                    muestran en la imagen, se abren cada mañana y
+                    se marchitan al caer la noche, caracterizadas
+                    por pétalos en forma de trompeta o campana,
+                    al igual que las azucenas, cuyas flores también
+                    tienen una duración de un día.
+
+                </p>
+                <button style="position: absolute; bottom: 2px; right: 6px;" onclick="nextPage('historia13', 'historia14')">Siguiente</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
