@@ -175,8 +175,8 @@ button:hover{
   padding: 16px;
   box-shadow: -6px 6px 2px black;
   position: relative;
-  -webkit-animation: swing-in-left-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-            animation: swing-in-left-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+  -webkit-animation: swing-in-left-fwd 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+            animation: swing-in-left-fwd 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
   
 }
 
@@ -191,6 +191,8 @@ button:hover{
   box-shadow: 4px 4px 2px black;
   position: relative;
 }
+
+
 
  @-webkit-keyframes swing-in-left-fwd {
   0% {
@@ -289,4 +291,3 @@ button:hover{
 font-optical-sizing: auto;
 font-style: normal;
 }
-
